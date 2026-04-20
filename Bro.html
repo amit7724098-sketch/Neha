@@ -5,178 +5,148 @@
 <title>For Neha ❤️</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
-body{
-  margin:0;
-  height:100vh;
-  font-family:'Poppins',sans-serif;
-  background:linear-gradient(135deg,#ff9a9e,#fad0c4);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  overflow:hidden;
-  color:#fff;
-  text-align:center;
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  /* Updated to a vibrant, warm pink gradient matching your image */
+  background: linear-gradient(180deg, #ffafbd 0%, #ffc3a0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
 }
 
-.card{
-  background:rgba(255,255,255,.18);
-  padding:30px;
-  border-radius:25px;
-  width:90%;
-  max-width:380px;
-  box-shadow:0 15px 35px rgba(0,0,0,.3);
-  animation:fadeIn 1s ease;
+.card {
+  /* Soft glassmorphism to match the image card style */
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  padding: 35px 25px;
+  border-radius: 40px;
+  width: 85%;
+  max-width: 400px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.hidden{display:none}
+.hidden { display: none; }
 
-h1{
-  font-family:'Great Vibes',cursive;
-  font-size:42px;
-  margin-bottom:10px;
-  text-shadow:0 0 12px rgba(255,255,255,.9);
+/* Main Bold Names Style */
+.names {
+  font-size: 34px;
+  font-weight: 800; /* Extra Bold */
+  margin-bottom: 5px;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-h2{
-  margin-bottom:18px;
-  text-shadow:0 0 8px rgba(255,255,255,.7);
+.sub-title {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  opacity: 0.9;
 }
 
-button{
-  padding:12px 24px;
-  margin:10px;
-  border:none;
-  border-radius:25px;
-  font-size:16px;
-  cursor:pointer;
-  background:#ff4d6d;
-  color:#fff;
-  transition:.3s;
-}
-button:hover{
-  transform:scale(1.1);
-  background:#ff1e56;
+/* Cursive Proposal Text */
+.typing {
+  font-family: 'Great Vibes', cursive;
+  font-size: 32px;
+  margin: 20px 0;
+  line-height: 1.2;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
-.shake{animation:shake .4s}
-
-@keyframes shake{
-  0%{transform:translateX(0)}
-  25%{transform:translateX(-5px)}
-  50%{transform:translateX(5px)}
-  75%{transform:translateX(-5px)}
-  100%{transform:translateX(0)}
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.typing{
-  font-family:'Great Vibes',cursive;
-  font-size:36px;
-  white-space:nowrap;
-  overflow:hidden;
-  border-right:3px solid #fff;
-  animation:typing 3.5s steps(35,end), blink .7s infinite;
-  margin-top:10px;
-  text-shadow:0 0 12px #fff,0 0 25px #ff4d6d;
+button {
+  padding: 14px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #fff;
+  color: #ff4d6d;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
 }
 
-@keyframes typing{from{width:0}to{width:100%}}
-@keyframes blink{50%{border-color:transparent}}
-
-img{
-  width:200px;
-  border-radius:18px;
-  margin-top:18px;
-  animation:zoomIn 1.3s ease;
-  box-shadow:0 0 20px rgba(255,255,255,.6);
+button:hover {
+  transform: scale(1.05);
+  background: #ff4d6d;
+  color: #fff;
 }
 
-@keyframes fadeIn{from{opacity:0;transform:scale(.9)}to{opacity:1}}
-@keyframes zoomIn{from{opacity:0;transform:scale(0)}to{opacity:1}}
-
-.heart{
-  position:absolute;
-  bottom:-20px;
-  font-size:18px;
-  animation:floatUp 6s linear infinite;
-  opacity:.8;
+.shake { animation: shake .4s; }
+@keyframes shake {
+  0%, 100% {transform:translateX(0)}
+  25% {transform:translateX(-5px)}
+  75% {transform:translateX(5px)}
 }
 
-@keyframes floatUp{
-  to{transform:translateY(-120vh);opacity:0}
+img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 25px;
+  border: 4px solid #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-/* ===== Final Page Styles ===== */
-.names{
-  font-size:26px;
-  font-weight:600;
-  margin-bottom:15px;
-  animation:heartbeat 1.6s infinite;
+.heart {
+  position: absolute;
+  bottom: -20px;
+  animation: floatUp 6s linear infinite;
+  opacity: 0.6;
 }
 
-.title{
-  font-family:'Great Vibes',cursive;
-  font-size:42px;
-  text-shadow:0 0 12px #fff,0 0 30px #ff6b81;
-  animation:glow 2s infinite alternate;
+@keyframes floatUp {
+  to { transform: translateY(-120vh) rotate(20deg); opacity: 0; }
 }
 
-.ring{
-  animation:pop 1.5s infinite;
-  display:inline-block;
-}
-
-.photo-box{
-  margin-top:18px;
-  background:rgba(255,255,255,.35);
-  border-radius:18px;
-  padding:12px;
-  display:inline-block;
-}
-
-@keyframes glow{
-  from{text-shadow:0 0 12px #fff}
-  to{text-shadow:0 0 20px #fff,0 0 40px #ff6b81}
-}
-@keyframes pop{
-  50%{transform:scale(1.25)}
-}
-@keyframes heartbeat{
-  25%{transform:scale(1.08)}
-  60%{transform:scale(1.12)}
-}
+@keyframes fadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
 </style>
 </head>
-
 <body>
 
 <div class="card" id="step1">
+  <div class="names">Amit ❤️ Neha</div>
   <h2>Do you know me? 💭</h2>
   <button onclick="goStep2()">Yes</button>
   <button onclick="goStep2()">Obviously 😌</button>
 </div>
 
 <div class="card hidden" id="step2">
+  <div class="names">Amit ❤️ Neha</div>
   <h2>Do you love me? ❤️</h2>
   <button onclick="yesLove()">Yes</button>
   <button id="noBtn" onclick="shakeNo()">No 😄</button>
 </div>
 
 <div class="card hidden" id="step3">
-  <h1>I'm going to propose to you 💍</h1>
-  <h2>Neha ❤️</h2>
+  <div class="names">Amit ❤️ Neha</div>
+  <div class="typing">I'm going to propose to you... 💍</div>
 </div>
 
 <div class="card hidden" id="step4">
-  <h1>I LOVE YOU 💖</h1>
-  <h2>NEHA 😘</h2>
+  <div class="names">Amit ❤️ Neha</div>
+  <div class="typing">I LOVE YOU NEHA! 💖</div>
 </div>
 
 <div class="card hidden" id="step5">
   <div class="names">Amit ❤️ Neha</div>
-  <div class="title">Happy Propose Day <span class="ring">💍</span></div>
+  <div class="sub-title">Happy Propose Day 💍</div>
+  
   <div class="typing">Will you be mine forever, Neha? ❤️</div>
 
   <div class="photo-box">
@@ -189,52 +159,54 @@ img{
 </audio>
 
 <script>
-const step1=document.getElementById("step1");
-const step2=document.getElementById("step2");
-const step3=document.getElementById("step3");
-const step4=document.getElementById("step4");
-const step5=document.getElementById("step5");
+const steps = [
+  document.getElementById("step1"),
+  document.getElementById("step2"),
+  document.getElementById("step3"),
+  document.getElementById("step4"),
+  document.getElementById("step5")
+];
 
-function goStep2(){
-  step1.classList.add("hidden");
-  step2.classList.remove("hidden");
+function goStep2() {
+  steps[0].classList.add("hidden");
+  steps[1].classList.remove("hidden");
 }
 
-function shakeNo(){
-  const b=document.getElementById("noBtn");
+function shakeNo() {
+  const b = document.getElementById("noBtn");
   b.classList.add("shake");
-  setTimeout(()=>b.classList.remove("shake"),400);
+  setTimeout(() => b.classList.remove("shake"), 400);
 }
 
-function yesLove(){
-  step2.classList.add("hidden");
-  step3.classList.remove("hidden");
+function yesLove() {
+  steps[1].classList.add("hidden");
+  steps[2].classList.remove("hidden");
 
-  setTimeout(()=>{
-    step3.classList.add("hidden");
-    step4.classList.remove("hidden");
-  },5000);
+  setTimeout(() => {
+    steps[2].classList.add("hidden");
+    steps[3].classList.remove("hidden");
+  }, 3000);
 
-  setTimeout(()=>{
-    step4.classList.add("hidden");
-    step5.classList.remove("hidden");
-  },8000);
+  setTimeout(() => {
+    steps[3].classList.add("hidden");
+    steps[4].classList.remove("hidden");
+  }, 6000);
 }
 
-/* music on first tap */
-const bgm=document.getElementById("bgm");
-document.addEventListener("click",()=>{bgm.play().catch(()=>{})},{once:true});
+/* music on interaction */
+const bgm = document.getElementById("bgm");
+document.addEventListener("click", () => { bgm.play().catch(() => {}) }, {once: true});
 
 /* floating hearts */
-setInterval(()=>{
-  const h=document.createElement("div");
-  h.className="heart";
-  h.innerHTML=Math.random()>0.5?"❤️":"🌹";
-  h.style.left=Math.random()*100+"vw";
-  h.style.fontSize=(15+Math.random()*20)+"px";
+setInterval(() => {
+  const h = document.createElement("div");
+  h.className = "heart";
+  h.innerHTML = Math.random() > 0.5 ? "❤️" : "🌹";
+  h.style.left = Math.random() * 100 + "vw";
+  h.style.fontSize = (20 + Math.random() * 20) + "px";
   document.body.appendChild(h);
-  setTimeout(()=>h.remove(),6000);
-},400);
+  setTimeout(() => h.remove(), 6000);
+}, 500);
 </script>
 
 </body>
